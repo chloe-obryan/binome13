@@ -1,0 +1,27 @@
+body,.contenair{
+    height: 100% !important;
+}
+html{
+    min-height: 100% !important;
+}
+
+.li{
+    list-style-type: none;
+}
+.as,.sect{
+    height: 100%;
+}
+
+.form-auth{
+    box-shadow: 1px 1px 5px 1px gray;
+}
+.form-auth input[name]{
+    border: 0;
+    border-bottom: 3px solid black;
+    width: 100%;
+}
+.form-auth div{
+    width: 10%;
+
+    padding: 5%;
+}
