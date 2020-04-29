@@ -1,3 +1,9 @@
+<style>
+    .register-form{
+    padding-top: 20%;
+}
+</style>
+
 <div class="container register">
                 <div class="row">
                     <div class="col-md-3 register-left">
