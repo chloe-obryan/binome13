@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.1
+-- version 4.9.2
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le :  Dim 26 avr. 2020 à 04:48
--- Version du serveur :  10.4.8-MariaDB
--- Version de PHP :  7.1.33
+-- Généré le :  mer. 29 avr. 2020 à 10:46
+-- Version du serveur :  10.4.11-MariaDB
+-- Version de PHP :  7.3.13
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données :  `gest_moto`
+-- Base de données :  `projet_moto`
 --
 
 -- --------------------------------------------------------
@@ -41,7 +41,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`nom`, `prenom`, `identifiant`, `mot_de_passe`, `Id`) VALUES
-('John', 'Doe', 'admin', 'd033e22ae348aeb5660fc2140aec35850c4da997', 0);
+('bado', 'zagre', 'groupe13', 'd45336512578698404939dd35c2965e5baa88b3b', 0);
 
 -- --------------------------------------------------------
 
@@ -64,9 +64,11 @@ CREATE TABLE `moto` (
 --
 
 INSERT INTO `moto` (`marque`, `modele`, `cylindre`, `numero_de_serie`, `prix`, `couleur`, `disponibilite`) VALUES
-('kaizer', 'safari', 'petit', 'bgffhrty', '400000', 'rouge', 'stock'),
-('rato', 'f12', '2', 'detrtr', '375000', 'noir-rouge', 'vendu'),
-('yamaha', 'sirus', '5', 'er3445', '600000', 'bleu', 'stock');
+('yamaha', 'crypton', '4', '450895', '395000', 'noir', 'stock'),
+('triwin', 'forcex', '4', '456m645', '510000', 'noir', 'stock'),
+('yamaha', 'sirus', '9', '685645nh', '780000', 'blanc', 'stock'),
+('sanili', 'sniya', '8', '84m44545', '90000', 'rouge', 'stock'),
+('kaizer', 'f12', '4', 'kjd56662', '375000', 'blanc', 'stock');
 
 -- --------------------------------------------------------
 
@@ -82,13 +84,6 @@ CREATE TABLE `vente` (
   `somme` varchar(255) DEFAULT NULL,
   `telephone` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Déchargement des données de la table `vente`
---
-
-INSERT INTO `vente` (`numero_de_serie`, `Id`, `nom`, `prenom`, `somme`, `telephone`) VALUES
-('detrtr', 1, 'justin', 'eva', '250000', '65857879');
 
 --
 -- Index pour les tables déchargées
